@@ -796,11 +796,9 @@
 
     <script>
         // Auto-updating copyright
-       const yearElement = document.getElementById('currentYear');
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
-        });
+        const year = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML =
+            `© ${year} Sandil Ranadeera`;
     </script>
 
 </body>
